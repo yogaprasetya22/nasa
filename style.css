@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position       : relative;
+    width          : 100%;
+    min-height     : 100vh;
+    padding        : 100px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    background     : whitesmoke;
+}
+
+header {
+    position       : absolute;
+    top            : 0;
+    left           : 0;
+    width          : 95%;
+    padding        : 20px 100px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header .nasa {
+    position : relative;
+    max-width: 150%;
+}
+
+header ul {
+    position: relative;
+    display : flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display        : inline-block;
+    color          : #333;
+    font-weight    : 600;
+    margin-left    : 40px;
+    text-decoration: none;
+}
+
+.content {
+    position       : relative;
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.content .textBox {
+    position : relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color      : #333;
+    font-size  : 52px;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.content .textBox h2 span {
+    color      : darkblue;
+    font-size  : 1.4em;
+    font-weight: 900;
+}
+
+.content .textBox p {
+    line-height: 19px;
+    margin-top : 30px;
+    color      : #333;
+}
+
+.content .textBox a {
+    display        : inline-block;
+    margin-top     : 60px;
+    padding        : 8px 20px;
+    background     : darkblue;
+    color          : whitesmoke;
+    border-radius  : 40px;
+    font-weight    : 500;
+    letter-spacing : 1px;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    width          : 600px;
+    display        : flex;
+    justify-content: flex-end;
+    padding-left   : 100px;
+    margin-bottom  : 70px;
+}
+
+.content .imgBox img {
+    max-width: 740px;
+}
+
+.kopi {
+    position : absolute;
+    left     : 80%;
+    top      : -75%;
+    max-width: 50%;
+    bottom   : 20px;
+    transform: translateX(-50%);
+    display  : flex;
+}
+
+.kopi1 {
+    position : absolute;
+    left     : 46%;
+    bottom   : 20px;
+    transform: translateX(-50%);
+    display  : flex;
+}
+
+.kopi1 li {
+    list-style: none;
+    display   : inline-block;
+    margin    : 0 -30px;
+    cursor    : pointer;
+}
+
+.kopi1 li:hover {
+    transform: translateY(-15px);
+}
+
+.k1 {
+    max-width: 200px;
+}
+
+.k2 {
+    max-width: 200px;
+}
+
+.k3 {
+    padding: 5%;
+    margin-top: 22px;
+    max-width: 180px;
+}
+
+.scm {
+    position       : absolute;
+    top            : 50%;
+    right          : 30px;
+    transform      : translateY(-15%);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+}
+
+.scm li {
+    list-style: none;
+}
+
+.scm li a {
+    display  : inline-block;
+    margin   : 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.bulet {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    height    : 100%;
+    width     : 100%;
+    background: #3789cc;
+    clip-path : circle(850px);
+}

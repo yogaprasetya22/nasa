@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Website jajal doang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="bulet"></div>
+        <header>
+            <a href="#"><img src="img/nasa.png" width="200px" class="nasa"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Nama disini bukan kopi<br>Tapi <span>Nasa</span></h2>
+                <p>Nasa mengkhususkan diri dalam Bubble Teas And Smoothies yang melayani pelanggan kami yang
+                    beragam dan selera mereka. Kami menawarkan smoothie non-transgenik tanpa gula tambahan yang
+                    dimaniskan secara alami yang sempurna untuk pengganti
+                    makanan, atau camilan sehat bergizi.</p>
+                <a href="/gerhana/index.html">GERHANA</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/img1.png" class="kopi">
+
+            </div>
+        </div>
+        <ul class="kopi1">
+            <li><img src="img/kopi1.png" class="k1" onclick="imgSlider('img/img1.png');ganti('#3789cc')"></li>
+            <li><img src="img/kopi2.png" class="k2" onclick="imgSlider('img/img2.png');ganti('#48cc28')"></li>
+            <li><img src="img/kopi3.png" class="k3" onclick="imgSlider('img/img3.png');ganti('#d2e622')"></li>
+        </ul>
+        <ul class="scm">
+            <li><a href="https://www.facebook.com/zahraputris.zahraputris"><img src="img/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/nissa_sabyan/"><img src="img/instagram.png"></a></li>
+            <li><a href="https://twitter.com/YogaPra15537338"><img src="img/twitter.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.kopi').src = anything;
+        }
+        function ganti(color){
+            const bulet = document.querySelector('.bulet');
+            bulet.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
